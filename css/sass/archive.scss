@@ -1,0 +1,46 @@
+// index.php
+// includes/section-archive.php
+
+.archive {
+
+    &-title {
+        text-align: center;
+    }
+
+    &-thumbnail {
+        max-width: 100%;
+        // @media only screen and (min-width : $breakpoint-mobile) {
+        //     max-width: ($max-frame/2 - 4.1rem);
+        // }
+        padding-bottom: 1rem;
+    }
+
+    &-post {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        @media only screen and (min-width: $max-frame+1rem){
+            justify-content: left;
+        }
+
+        &-card {
+            border: 1px solid $grey;
+            width: ($max-frame/2 - 2rem);
+            padding: 1rem;
+            margin: 1rem;
+
+            > h3,p {
+                margin-bottom: .5rem;
+                //padding-bottom: 1rem;
+            }
+        }
+    }
+
+    &-pagination {
+        margin: 1rem auto;
+        text-align: center;
+        font-family: $heading;
+    }
+
+}

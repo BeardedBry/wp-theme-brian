@@ -1,0 +1,21 @@
+footer {
+    bottom: 0;
+    height: 8rem;
+    margin-top: 4rem;
+    position: relative;
+
+    .copyright{
+        left: 50%;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        white-space: wrap;
+
+        @media only screen and (min-width : $breakpoint-mobile) {
+            white-space: nowrap;
+        } 
+    }
+}

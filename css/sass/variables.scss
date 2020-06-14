@@ -1,0 +1,45 @@
+/* ----------------------------------------------------------------------------
+* Variables
+* ------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------
+* Custom Website Fonts
+* ------------------------------------------------------------------------- */
+
+$aa_font--one: 'Montserrat', sans-serif;
+$aa_font--two: 'Montserrat', sans-serif;
+$aa_font--three: 'Bevan', 'Montserrat', sans-serif;
+
+/* ----------------------------------------------------------------------------
+* Custom Website Colors
+* ------------------------------------------------------------------------- */
+// Colors
+$dark : #3B3B3B;
+$light: #FDFDFD;
+$grey : rgb(59,59,59);
+$darkgrey : rgb(68,68,68);
+$teal : rgb(26, 76, 109);
+$brand-js : #f7df1e;
+$brand-php : #787CB5;
+$w7 : #f7f7f7;
+$text: Georgia, Cochin, Cambria,  Times, 'Times New Roman', serif;
+$heading: "Aktiv Grotesk", Arial, Helvetica, sans-serif;
+
+// Sizes
+$sz1 : 1rem;
+$sz2 : 1.3rem;
+$sz3 : 1.5rem;
+$sz4 : 1.8rem;
+
+
+// Misc
+$max-frame : 45rem;
+
+
+// Time
+$fast : .3s;
+$slow : .5s;
+
+// Media Queries
+$breakpoint-mobile: 375px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1224px;

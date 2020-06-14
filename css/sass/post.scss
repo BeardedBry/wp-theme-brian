@@ -1,0 +1,47 @@
+.post {
+
+    &-date {
+        margin: 1rem 0;
+    }
+
+    &-author {
+        margin: 1rem 0;
+    }
+
+    &-tag{
+        display: inline-block;
+        font-family: $heading;
+        text-decoration: none;
+        padding: .4rem;
+        background-color: $grey;
+        color: $light;
+        border-radius: 10%;
+        margin: 1rem 0;
+
+        &:hover {
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        &-javascript{
+            background-color: $brand-js;
+            color: black;
+        }
+
+        &-php{
+            background-color: $brand-php;
+            color: white;
+        }
+
+        &:not(:last-child){
+            margin-right: .4rem;
+        }
+    }
+}
+
+.single-thumbnail {
+    // width: 100%;
+    max-width: 100%;
+    @media only screen and (min-width : $breakpoint-mobile) {
+        max-width: $max-frame;
+    }
+}

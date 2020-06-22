@@ -32,6 +32,11 @@
             color: white;
         }
 
+        &-php{
+            background-color: $brand-react;
+            color: $dark;
+        }
+
         &:not(:last-child){
             margin-right: .4rem;
         }

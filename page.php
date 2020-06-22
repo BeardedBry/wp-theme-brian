@@ -10,6 +10,10 @@
 
             <?php get_template_part('includes/section', 'content');?>
             
+            <?php if( is_active_sidebar('page-sidebar')):?>
+                <?php dynamic_sidebar('page-sidebar');?>
+            <?php endif;?>
+
         </main>
     </section>
 </div>

@@ -13,7 +13,7 @@
         <?php endif; ?>
         <h3><?php the_title();?></h3>
         <h5><?php echo date('M d, Y',strtotime($post->post_date));?></h5>
-        <?php the_excerpt(); ?>
+        <!-- <?php the_excerpt(); ?> -->
         <a href="<?php the_permalink()?>">Read More</a>
     </div>
     <!--

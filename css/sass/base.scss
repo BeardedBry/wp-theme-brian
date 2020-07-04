@@ -34,7 +34,7 @@ code {
 }
 
 .page-wrap {
-    padding-top: 2rem;
+    margin-top: 3rem;
     position: relative;
     min-height: 100vh;
     //margin: 0 auto;
@@ -60,7 +60,19 @@ code {
         padding-right: 0;
         max-width: $max-frame + ($max-frame/3);
     }
+}
 
+.frame-sidebar {
+    display: none;
+    position: absolute;
+    right:0;
+    top:0;
+    width: 20rem;
+    padding: 0rem 1rem;
+    
+    @media only screen and (min-width : $max-frame+(20rem * 2)) { 
+        display: block;
+    }
 }
 
 

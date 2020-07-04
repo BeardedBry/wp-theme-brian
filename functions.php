@@ -49,6 +49,8 @@ function my_sidebars()
         array(
             'name' => 'Page Sidebar',
             'id' => 'page-sidebar',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	        'after_widget'  => "</div>\n",
             'before_title' => '<h4 class="widget-title">',
             'after_title' => '</h4>'
         )

@@ -28,16 +28,17 @@
         ?>
 
         <button class="hamburger-wrapper">
-            <?php 
+        </button>
+
+    </div>
+
+      <?php 
                     wp_nav_menu(
                         array(
                             'theme_location' => 'mobile-nav',
                             'menu_class' => 'mobile-nav'
                         )
                     );
-            ?>
-        </button>
-
-    </div>
+        ?>
 
 </header>

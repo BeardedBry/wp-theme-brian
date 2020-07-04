@@ -17,11 +17,15 @@
 
     &-post {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
         
         @media only screen and (min-width: $max-frame+1rem){
             justify-content: left;
+        }
+        
+        @media only screen and (min-width: $breakpoint-desktop){
+            flex-wrap: nowrap;
         }
 
         &-card {
@@ -29,10 +33,16 @@
             width: ($max-frame/2 - 2rem);
             padding: 1rem;
             margin: 1rem;
+            box-shadow: 1px 1px 3px #888888;
+            text-decoration: none; 
 
             > h3,p {
                 margin-bottom: .5rem;
                 //padding-bottom: 1rem;
+            }
+
+            &:hover, &:active {
+                box-shadow: 2px 2px 5px #888888;                
             }
         }
     }

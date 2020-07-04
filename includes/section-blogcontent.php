@@ -12,8 +12,9 @@
             <p><?php 
                 $fname = get_the_author_meta('first_name');
                 $lname = get_the_author_meta('last_name');
-                echo 'Posted by ' . $fname . ' ' . $lname;
+                echo 'Article by ' . $fname . ' ' . $lname;
             ?></p>
+            <?php echo get_the_date(); ?>
         </div>
 
 

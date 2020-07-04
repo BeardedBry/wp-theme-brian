@@ -1,4 +1,6 @@
 
+$menu-items: 2;
+$menu-height: (2rem * $menu-items) + ($sz2 * $menu-items) + .3rem;
 
 header {
     // BG Styles
@@ -67,7 +69,36 @@ header {
     // Mobile Hamburger Menu
 
     .mobile-nav{
-        display: none;
+        text-align: center; 
+        overflow: hidden;
+        height: 0rem;
+        transition: height .2s;
+
+        &.show {
+            //transition: height .2s;
+            height: $menu-height;
+        }
+
+        a {
+            background-color: $darkgrey;
+            color: $light;
+            display: block;
+            font-size: $sz2;
+            padding: 1rem;
+            text-decoration: none;
+            width: 100%;
+            transition: color .2s;
+            transition: background-color .3s;
+
+            &:hover, &:active{
+                background-color: $e6;
+                color: $darkgrey;
+            }
+        }
+
+        @media only screen and (min-width: $max-frame){
+            display: none;
+        } 
     }
 
     button.hamburger-wrapper {

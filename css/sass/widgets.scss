@@ -1,0 +1,10 @@
+// side bar widgets
+
+.widget {
+
+    &_recent_entries{
+        ul {
+            list-style: none;
+        }
+    }
+}

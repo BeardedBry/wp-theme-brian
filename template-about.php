@@ -2,17 +2,20 @@
 
 /*
 Template Name: About
+about page uses front-page, not this.
 */
 
 ?>
 
-<?php get_header('secondary');?>
+<!-- <?php get_header('secondary');?>
 
 
 <div class="main">
 
     <h1><?php the_title();?></h1>
 
+    <?php the_post_thumbnail( 'medium' ); ?>
+    <h2>This is the about template</h2>
     <div class="col-sm">
        Image
        Bio
@@ -23,9 +26,12 @@ Template Name: About
     </div>
 
 
+    <div class="form">
+        <?php get_template_part('includes/form','inquiry');?>
+    </div>
 
     
  </div>
 
 
-<?php get_footer();?>
+<?php get_footer();?> -->

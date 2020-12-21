@@ -3,6 +3,9 @@
 .widget {
 
     &_recent_entries{
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 4.5rem;
         ul {
             list-style: none;
         }

@@ -26,6 +26,7 @@ add_theme_support('post-thumbnails');
 add_theme_support('widgets');
 
 
+
 // Menus
 register_nav_menus(
 
@@ -38,6 +39,7 @@ register_nav_menus(
 
 
 // Custom Image Sizes
+add_image_size('blog-hero', 1600, 400, true);
 add_image_size('blog-large', 600, 400, true);
 add_image_size('blog-small', 318, 200, true);
 
@@ -57,3 +59,12 @@ function my_sidebars()
     );
 }
 add_action('widgets_init','my_sidebars');
+
+
+
+add_action('wp_ajax_contact', 'contact_form');
+add_action('wp_ajax_nopriv_contact', 'contact_form');
+
+function contact_form(){
+    wp_send_json_success('It works!');
+}

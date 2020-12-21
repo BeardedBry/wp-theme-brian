@@ -20,6 +20,7 @@
 
         &:hover {
             //box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+            transition: box-shadow $fast;
             box-shadow: 2px 2px 5px #888888; 
         }
 
@@ -46,8 +47,8 @@
 
 .single-thumbnail {
     // width: 100%;
-    max-width: 100%;
-    @media only screen and (min-width : $breakpoint-mobile) {
-        max-width: $max-frame;
-    }
+    // max-width: 100%;
+    // @media only screen and (min-width : $breakpoint-mobile) {
+    //     max-width: $max-frame;
+    // }
 }

@@ -13,13 +13,39 @@
 
 p, span, body, {
     font-family: $text;
+    //font-family: $aa_font--one;
+}
+
+code *{
+    font-family: $code;
+}
+
+body {
     color: $dark;
 }
 
-p {
+p, a, li, {
     font-size: $sz2;
-    line-height: $sz1+$sz1;
+    line-height: 2.0rem;
 }
+
+p, ul, h1, h2, h3, h4, div.code-toolbar {
+    margin-bottom: 1rem;
+}
+
+// indent ul
+/* Main Level */
+ul{
+    margin-left: 2rem;
+  }
+  /* Second Level */
+ul ul{
+    margin-left: 3rem;
+  }
+  /* Third Level */
+ul ul ul{
+    margin-left: 4rem;
+  }
 
 h1,h2,h3,h4,h5 {
     font-family: $heading;
@@ -81,4 +107,13 @@ code {
 
 .font-header{
     font-family: $heading;
+}
+
+.round-image {
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+    // height: 15rem;
+    // width: 15rem;
+  }
 }

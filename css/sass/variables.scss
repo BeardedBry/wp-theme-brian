@@ -13,7 +13,7 @@ $aa_font--three: 'Bevan', 'Montserrat', sans-serif;
 * Custom Website Colors
 * ------------------------------------------------------------------------- */
 // Colors
-$dark : #3B3B3B;
+$dark : rgb(19, 18, 18);
 $light: #FDFDFD;
 $grey : rgb(59,59,59);
 $darkgrey : rgb(68,68,68);
@@ -23,7 +23,8 @@ $brand-php : #787CB5;
 $brand-react: #61dbfb;
 $w7 : #f7f7f7;
 $e6 : #e6e6e6;
-$text: Georgia, Cochin, Cambria,  Times, 'Times New Roman', serif;
+$text: Charter, Georgia, Cochin, Cambria,  Times, 'Times New Roman', serif;
+$code: Lucida Console, Courier, Courier New, Monaco, Consolas;
 $heading: "Aktiv Grotesk", Arial, Helvetica, sans-serif;
 
 // Sizes
